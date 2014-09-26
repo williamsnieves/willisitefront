@@ -21,12 +21,17 @@ header
 
 .profile-image figure
 	background #ccc
-	margin-top 0
+	margin 0
 	img
 		height 100%
 		width 100%
 
 .content-profile-description
+	height 300px;
+	border 1px solid red
+	background #ccc
+	position relative
+	z-index: 11
 	h2
 		color #14235c
 		text-align center
@@ -38,6 +43,106 @@ header
 			margin-bottom 0
 		&:nth-child(odd)
 			margin-top 0
+
+.content-profile-description2
+	position relative
+	z-index: 10
+	figure
+		margin 0
+		img
+			width 100%
+
+.content-profile-description3
+	position relative
+	background #eae85c
+	z-index: 9
+	figure
+		margin 0
+		img
+			width 100%
+
+.content-profile-description
+	&:after
+		content ""
+		position absolute
+		top 100%
+		left 50%
+		margin-left -50px
+		width 0
+		height 0
+		border-top solid 20px #ccc
+		border-left solid 50px transparent
+		border-right solid 50px transparent
+	/*&:before
+		content ""
+		position absolute
+		top 0
+		left 50%
+		margin-left -50px
+		width 0
+		height 0
+		border-top solid 30px #000
+		border-left solid 50px transparent
+		border-right solid 50px transparent*/
+
+.content-profile-description2
+	&:after
+		content ""
+		position absolute
+		top 104%
+		left 50%
+		margin-left -50px
+		width 0
+		height 0
+		border-top solid 30px #fff
+		border-left solid 50px transparent
+		border-right solid 50px transparent
+	/*&:before
+		content ""
+		position absolute
+		top 0
+		left 50%
+		margin-left -50px
+		width 0
+		height 0
+		border-top solid 30px #000
+		border-left solid 50px transparent
+		border-right solid 50px transparent*/
+
+
+.content-profile-description3
+	&:after
+		content ""
+		position absolute
+		top 100%
+		left 50%
+		margin-left -50px
+		width 0
+		height 0
+		border-top solid 30px #eae85c
+		border-left solid 50px transparent
+		border-right solid 50px transparent
+	/*&:before
+		content ""
+		position absolute
+		top 0
+		left 50%
+		margin-left -50px
+		width 0
+		height 0
+		border-top solid 30px #000
+		border-left solid 50px transparent
+		border-right solid 50px transparent*/
+
+.profile-description-wrapper
+	position relative
+	botom 0
+	left 0
+		
+
+
+
+
 			
 			
 		
