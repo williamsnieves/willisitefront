@@ -1,0 +1,170 @@
+@import 'normalize.styl'
+@import 'font.styl'
+
+body
+	font-size 16px
+
+header
+	background #14235c
+	height 60px
+	width 100%
+
+.header-logo
+	margin 0 auto
+	position relative
+	width 115px
+	z-index 99999
+	top -1.8em
+	img
+		width 100%
+
+.profile-image
+	background #fff
+
+.profile-image figure
+	background #fff
+	margin 0
+	img
+		height 100%
+		width 100%
+
+.content-profile-description
+	background #fff
+	height 150px;
+	position relative
+	z-index: 11
+	h2
+		color #14235c
+		text-align center
+	p
+		text-align center
+		color #14235c
+
+		&:nth-child(even)
+			margin-bottom 0
+		&:nth-child(odd)
+			margin-top 0
+
+.content-profile-description
+	&:after
+		border-left solid 50px transparent
+		border-right solid 50px transparent
+		border-top solid 20px #fff
+		content ""
+		height 0
+		left 50%
+		margin-left -50px
+		position absolute
+		top 100%
+		width 0
+
+.bio-description
+	position relative
+
+.bg-bio
+	background #4d4d4d
+	margin 0
+	position relative
+	top 0
+	left 0
+	img
+		width 48.3em
+		height 37.375em
+
+.info-title-profile
+	position absolute
+	z-index 9
+	h2
+		padding 1.5em 0 0 1em
+		margin 0
+		color #fff
+		text-transform uppercase
+	h4
+		color #fff
+		font-weight normal
+		margin -0.5em 0 0 1.5em
+
+
+.info-profile
+	position absolute
+	z-index 9
+	top 10em
+	p
+		color #fff
+		margin 0 2em 0 2em
+		text-align left
+
+
+.skill-content
+	background #4d4d4d
+	position relative
+	z-index: 9
+	.title-skill
+		width 30%
+		margin 0
+		padding 0
+		height auto
+		color #fff
+		float left
+		h2
+			margin 1em 0 0 2em
+	.list-skill	
+		width 70%
+		height auto
+		color #fff
+		margin 0 0 2em 0
+		display inline-block
+		/*padding 1em 0 1em 3em*/
+		ul
+			list-style none
+			margin 2em
+
+	figure
+		margin 0
+		img
+			width 100%
+
+.skill-content
+	&:after
+		border-left solid 50px transparent
+		border-right solid 50px transparent
+		border-top solid 20px #4d4d4d
+		content ""
+		height 0
+		left 50%
+		margin-left -50px
+		position absolute
+		top 100%
+		width 0
+
+.item-categories
+	height 15em
+	h3
+		margin 0
+		position relative
+		top 50%
+		text-align center
+	&:nth-child(1)
+		background #2fa5e2;
+	&:nth-child(2)
+		background #c2ee5b
+	&:nth-child(3)
+		background #2effe0
+		position relative
+		&:after
+			border-left solid 50px transparent
+			border-right solid 50px transparent
+			border-top solid 20px #2effe0
+			content ""
+			height 0
+			left 50%
+			margin-left -50px
+			position absolute
+			top 100%
+			width 0
+
+@media screen and (max-width:320px)
+	.bg-bio
+		img
+			width 48.3em
+			height 42.375em
