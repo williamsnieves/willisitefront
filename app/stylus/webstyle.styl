@@ -138,6 +138,7 @@ header
 		width 0
 
 .item-categories
+	position relative
 	height 15em
 	h3
 		margin 0
@@ -162,6 +163,122 @@ header
 			position absolute
 			top 100%
 			width 0
+
+
+.contact-form-wrapper
+	h2
+		text-align center
+		margin 2em 0 0 0
+		color #4e4e4e
+	label
+		&:first-child
+			color #a5a5a5
+			margin 2em 2em 0 2em
+	label
+		color #a5a5a5
+		margin 0 2em 0 2em
+
+.image-cat
+	position absolute
+	top 0
+	bottom 0
+	left 0
+	right 0
+	width 100%
+	height 100%
+	-webkit-background-size cover
+	background-size cover
+	background-repeat no-repeat
+	background-position 50% 0
+	-webkit-transition -webkit-transform .35s
+	transition transform .35s
+	-webkit-transition-timing-function ease-out
+	transition-timing-function ease-out
+	-webkit-backface-visibility hidden
+	backface-visibility hidden
+
+.mesh-image
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	-webkit-transition: -webkit-transform .35s;
+	transition: transform .35s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	opacity: .8;
+	-webkit-transition: opacity .4s;
+	transition: opacity .4s;
+	background-position: center center;
+
+.image-cat
+	&:hover .mesh-image
+		-webkit-transform scale(1)
+		-ms-transform scale(1)
+		transform scale(1)
+		-webkit-transition -webkit-transform 0s linear
+		transition transform 0s linear
+
+#line-input-name
+	border 0
+	border-bottom 2px solid #000
+	outline none
+	box-shadow none
+
+
+#line-input-email
+	border 0
+	border-bottom 2px solid #000
+	outline none
+	box-shadow none
+
+#line-input-message
+	border 0
+	border-bottom 2px solid #000
+	outline none
+	box-shadow none
+	margin-bottom 2em
+	
+
+.center-buttton-form
+	display block
+	width 114px
+	margin 0 auto
+	border-radius 0.5em
+	background transparent
+	color #4e4e4e
+	border 1px solid #4e4e4e
+	&:hover
+		background #4e4e4e
+		color #fff
+
+
+#line-input-name
+	border 0
+	border-bottom 1px solid #000
+	outline none
+	box-shadow none
+
+#line-input-email
+	border 0
+	border-bottom 1px solid #000
+	outline none
+	box-shadow none
+
+#line-input-message
+	border 0
+	border-bottom 1px solid #000
+	outline none
+	box-shadow none
 
 @media screen and (max-width:320px)
 	.bg-bio
