@@ -33,6 +33,6 @@ http.createServer(function(request, response) {
       response.end();
     });
   });
-}).listen(parseInt(port, 10));
+}).listen(parseInt(port, 10),"0.0.0.0");
  
 console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
