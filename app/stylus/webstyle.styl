@@ -23,7 +23,7 @@ header
 	z-index 99999999999
 
 .main-menu
-	display block
+	display none
 	background #2a9dde
 	ul
 		margin 0
@@ -309,14 +309,30 @@ header
 @media screen and (min-width:680px)
 	header
 		height auto
+	.small-page
+		display none
+
 	.icon-menu-willi
 		display none
 	.header-logo
+		display none
+	.main-menu
 		display none
 	.main-menu-tablet
 		display block
 		background #4d4d4d
 		height 58px
+
+	.profile-desc-tablet
+		background #2fa5e2
+		height auto
+
+	.image-desc-tablet
+		padding 0
+		figure
+			margin 0
+			img
+				width 100%
 
 	.logo-tablet
 		margin 0.8em
@@ -329,6 +345,7 @@ header
 	#list-tablet-opc a
 		&:hover
 			background #4d4d4d
+			color #2fa5e2
 			font-size 1em
 			&:after
 				border-left solid 40px transparent
@@ -341,6 +358,7 @@ header
 				top 3.6em
 				left: 50%;
 				width 0
+				z-index 999999
 				
 				
 
