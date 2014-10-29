@@ -1,6 +1,8 @@
 @import 'normalize.styl'
 @import 'font.styl'
 
+
+
 body
 	font-size 16px
 
@@ -337,6 +339,8 @@ header
 
 	.logo-tablet
 		margin 0.8em
+
+			
 	
 	.content-profile-description-tablet
 		h2
@@ -410,12 +414,23 @@ header
 					color #fff
 
 		
-				
-		
 
 	.top-bar-section li:not(.has-form) a:not(.button)
 		background #4d4d4d
 		line-height 58px
+		
+	.free-wall .brick[data-state="init"]
+		display none
+
+	.free-wall .brick[data-state="start"]
+		display block
+		animation start 0.5s
+		-webkit-animation start 0.5s
+	.free-wall .brick[data-state="move"]
+		transition top 0.5s, left 0.5s, width 0.5s, height 0.5s
+		-webkit-transition top 0.5s, left 0.5s, width 0.5s, height 0.5s
+		
+		
 	#list-tablet-opc a
 		position relative
 	#list-tablet-opc a
@@ -435,6 +450,21 @@ header
 				left: 50%;
 				width 0
 				z-index 999999
+	#container-wall
+		width 100%
+		margin auto
+		
+	@keyframes start
+		from
+			transform scale(0)
+		to
+			transform scale(1)
+	
+	@-webkit-keyframes start
+		from
+			-webkit-transform scale(0)
+		to
+			-webkit-transform scale(1)
 				
 				
 
