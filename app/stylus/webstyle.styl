@@ -20,6 +20,15 @@ drawline(width, height, position, top, right, mt, mr, mb, ml, background)
 	right right
 	margin mt mr mb ml
 	background background
+
+drawlineright(width, height, position, top, right, mt, mr, mb, ml, background)
+	width width
+	height height
+	position position
+	top top
+	left right
+	margin mt mr mb ml
+	background background
 	
 
 body
@@ -393,6 +402,8 @@ header
 			position absolute
 			right 0
 			top 7.5em
+			animation brainfloat 4s infinite
+			-webkit-animation brainfloat 4s infinite
 			img
 				width 10.96875em
     	
@@ -406,6 +417,8 @@ header
 			position absolute
 			left 0
 			top 7.5em
+			animation brainfloat 4s infinite
+			-webkit-animation brainfloat 4s infinite
 			img
 				width 10.96875em
 	
@@ -420,7 +433,7 @@ header
 		rotateline(36deg)
 	
 	.topline-brain
-		drawline(13.375em, 1px, absolute, 3.6em, 0, -0.1em, 9.2em, 0, 0, #fff)
+		drawline(7.375em, 1px, absolute, 3.6em, 0, -0.1em, 9.2em, 0, 0, #fff)
 	
 	.baseline-brain-first
 		width 5.4375em
@@ -433,7 +446,7 @@ header
 		rotateline(37deg)
 	
 	.topline-brain-first
-		drawline(9.375em, 1px, absolute, 7em, 0, -0.1em, 11.8em, 0, 0, #fff)
+		drawline(38%, 1px, absolute, 7em, 0, -0.1em, 11.8em, 0, 0, #fff)
 	
 	.baseline-brain-second
 		width 3.125em
@@ -475,26 +488,118 @@ header
 	.topline-brain-fourth
 		drawline(79px, 1px, absolute, 19.1em, 0, -0.1em, 13em, 0, 0, #fff)
 	
+
+	.baseline-brain-right
+		width 7.125em
+		height 1px
+		position absolute
+		top 6em
+		left 0
+		margin -0.4em 0 0 2.8em
+		background #fff
+		rotateline(-36deg)
+	
+	.topline-brain-right
+		drawlineright(7.375em, 1px, absolute, 3.6em, 0, -0.1em, 0, 0, 9.2em, #fff)
+	
+	.baseline-brain-first-right
+		width 5.4375em
+		height 1px
+		position absolute
+		top 8.5em
+		left 0
+		margin 0 0 0 6.9em
+		background #fff
+		rotateline(-37deg)
+	
+	.topline-brain-first-right
+		drawlineright(38%, 1px, absolute, 7em, 0, -0.1em, 0, 0, 11.8em, #fff)
+	
+	.baseline-brain-second-right
+		width 3.125em
+		height 1px
+		position absolute
+		top 12em
+		left 0
+		margin 0 0 0 9.2em
+		background #fff
+		rotateline(-45deg)
+	
+	.topline-brain-second-right
+		drawlineright(6.625em, 1px, absolute, 11em, 0, -0.1em, 0, 0, 11.8em, #fff)
+	
+
+	.baseline-brain-third-right
+		width 3.125em
+		height 1px
+		position absolute
+		top 16em
+		left 0
+		margin 0 0 0 10.3em
+		background #fff
+		rotateline(-45deg)
+	
+	.topline-brain-third-right
+		drawlineright(9.375em, 1px, absolute, 15em, 0, -0.1em, 0, 0, 13em, #fff)
+	
+			
+
+	.title-skill
+		color white_color
+		position absolute
+		top 2em
+		margin 0 0 0 47%
+	
 	.skill-image
 		background white_color
 		position absolute
-		top 1.5em
-		margin 0.3em 0 0 3.3em
 		width 50px
 		height 50px
 		border-radius 20%
-		&:nth-child(4)
+		&:nth-child(2)
+			top 1.5em
+			margin 0.3em 0 0 34%
+		&:nth-child(3)
 			top 5em
-			margin 0.3em 0 0 7.2em
-		&:nth-child(5)
+			margin 0.3em 0 0 10%
+		&:nth-child(4)
 			top 9em
 			margin 0.3em 0 0 8.4em
-		&:nth-child(6)
+		&:nth-child(5)
 			top 13em
-			margin 0.3em 0 0 3.5em
-		&:nth-child(7)
+			margin 0.3em 0 0 10%
+		&:nth-child(6)
 			top 17em
 			margin 0.3em 0 0 8em
+	
+	.title-skill-right
+		color white_color
+		position absolute
+		top 2em
+		margin 0 0 0 47%
+	
+	.skill-image-right
+		background white_color
+		position absolute
+		width 50px
+		height 50px
+		border-radius 20%
+		&:nth-child(2)
+			top 1.5em
+			margin 0.3em 0 0 55%
+		&:nth-child(3)
+			top 5em
+			right 0
+			margin .3em 10% 0 0
+		&:nth-child(4)
+			top 9em
+			right 0
+			margin 0.3em 8.4em 0 0
+		&:nth-child(5)
+			top 13em
+			right 0
+			margin 0.3em 14% 0 0
+	
 		
 
 	.portfolio-first-tablet
@@ -577,23 +682,139 @@ header
 		width 100%
 		margin auto
 		
-	@keyframes start
-		from
-			transform scale(0)
-		to
-			transform scale(1)
 	
-	@-webkit-keyframes start
-		from
-			-webkit-transform scale(0)
-		to
-			-webkit-transform scale(1)
 				
 				
 
+@media screen and (min-width:680px) and (max-width:860px)
+	.skill-image		
+		&:nth-child(2)
+			top 1.5em
+			left -11%
+		&:nth-child(3)
+			top 5em
+			left: -4%
+		&:nth-child(4)
+			top 9em
+			left: -21%
+		&:nth-child(5)
+			top 13em
+			left:-2%
+		&:nth-child(6)
+			top 17em
+			left:-18%
+	
+	.skill-image-right
+		background white_color
+		position absolute
+		width 50px
+		height 50px
+		border-radius 20%
+		&:nth-child(2)
+			top 1.5em
+			right 0
+			margin 0.3em 20% 0 0
+		&:nth-child(3)
+			top 5em
+			right 0
+			margin 0.3em 5% 0 0
+		&:nth-child(4)
+			top 9em
+			right 0
+			margin 0.3em 19% 0 0
+		&:nth-child(5)
+			top 13em
+			right 0
+			margin 0.3em 5% 0 0
+	
+	.title-skill-right
+		color white_color
+		position absolute
+		top 2em
+		margin 0 0 0 47%
+	
+	.title-skill
+		position absolute
+		top 2em
+		left -4%
+
+	.baseline-brain
+		width 7.125em
+		height 1px
+		position absolute
+		top 6em
+		right 0
+		margin -0.4em 2.8em 0 0
+		background #fff
+		rotateline(36deg)
+	
+	.topline-brain
+		drawline(28%, 1px, absolute, 3.6em, 0, -0.1em, 9.2em, 0, 0, #fff)
+	
+
+	
+	.topline-brain-first
+		drawline(38%, 1px, absolute, 7em, 0, -0.1em, 11.8em, 0, 0, #fff)
+	
+	
+	
+	.topline-brain-second
+		drawline(25%, 1px, absolute, 11em, 0, -0.1em, 11.8em, 0, 0, #fff)
+	
+
+
+	.topline-brain-third
+		drawline(28%, 1px, absolute, 15em, 0, -0.1em, 13em, 0, 0, #fff)
+	
+
+	
+	.topline-brain-fourth
+		drawline(19%, 1px, absolute, 19.1em, 0, -0.1em, 13em, 0, 0, #fff)
+		
+
+
+	.topline-brain-right
+		drawlineright(32%, 1px, absolute, 3.6em, 0, -0.1em, 0, 0, 9.2em, #fff)
+	
+	
+	.topline-brain-first-right
+		drawlineright(38%, 1px, absolute, 7em, 0, -0.1em, 0, 0, 11.8em, #fff)
+	
+	
+	.topline-brain-second-right
+		drawlineright(25%, 1px, absolute, 11em, 0, -0.1em, 0, 0, 11.8em, #fff)
+	
+	
+	.topline-brain-third-right
+		drawlineright(28%, 1px, absolute, 15em, 0, -0.1em, 0, 0, 13em, #fff)
 
 @media screen and (max-width:320px)
 	.bg-bio
 		img
 			width 48.3em
 			height 42.375em
+			
+
+@keyframes start
+	from
+		transform scale(0)
+	to
+		transform scale(1)
+	
+@-webkit-keyframes start
+	from
+		-webkit-transform scale(0)
+	to
+		-webkit-transform scale(1)
+
+
+@keyframes brainfloat
+	0%
+		transform scale(1)
+		-webkit-transform scale(1)
+	50%
+		transform scale(0.98)
+		-webkit-transform scale(0.98)
+	100%
+		transform scale(1)
+		-webkit-transform scale(1)
