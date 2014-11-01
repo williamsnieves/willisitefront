@@ -1,7 +1,15 @@
 $(function(){
 	$(document).foundation();
 
-	var temp = "<div class='brick' style='width:{width}px;'><img src='../images/tabletimages/tablet-{index}.jpg' width='100%'></div>";
+	var temp = "<div class='brick' style='width:{width}px;'>"+
+				"<figure class='effect-bubba' style='position:relative; top:0; left: 0;'>"+
+				"<figcaption style='position: absolute; top:0; left:0;'>"+
+							"<h2>Fresh <span>Bubba</span></h2>"+
+							"<p>Bubba likes to appear out of thin air.</p>"+
+				"</figcaption>"+
+				"<img src='../images/tabletimages/tablet-{index}.jpg' width='100%'>"+
+				"</figure>"+
+				"</div>";
 			var w = 1, h = 1, html = '', limitItem = 7;
 			for (var i = 0; i < limitItem; ++i) {
 				w = 1 + 3 * Math.random() << 0;
