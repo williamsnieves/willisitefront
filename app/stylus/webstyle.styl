@@ -658,7 +658,140 @@ header
 		transition top 0.5s, left 0.5s, width 0.5s, height 0.5s
 		-webkit-transition top 0.5s, left 0.5s, width 0.5s, height 0.5s
 		
+	
+
+	.item 
+		width 25%
+	.item.w2
+		width 50%
+
+	.box
+		float left
+		width 33%
+		overflow hidden
+		figure
+			margin 0
 		
+		figure figcaption,
+		figure figcaption > a
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+		
+		figure figcaption > a
+			z-index 1000
+			text-indent 200%
+			white-space nowrap
+			font-size 0
+			opacity 0
+		
+		figure h2 
+			word-spacing -0.15em
+			font-weight 300
+			
+		figure h2 span 
+			font-weight 800
+		
+
+		figure h2,
+		figure p
+			margin 0
+		
+
+		figure p 
+			letter-spacing 1px
+			font-size 68.5%
+		
+
+		figure.effect-bubba
+			margin 0
+
+		figure.effect-bubba
+			background blue_strong
+
+		figure.effect-bubba img 
+			opacity 0.7
+			-webkit-transition opacity 0.35s
+			transition opacity 0.35s
+
+
+		figure.effect-bubba:hover img 
+			opacity: 0.4
+		
+		figure.effect-bubba:hover img
+			opacity 0.1
+			-webkit-transform scale3d(2,2,1)
+			transform scale3d(2,2,1)
+		
+		figure.effect-bubba img
+			-webkit-transition opacity 0.35s, -webkit-transform 0.35s
+			transition opacity 0.35s, transform 0.35s
+
+
+		figure.effect-bubba figcaption::before,
+		figure.effect-bubba figcaption::after 
+			position absolute
+			top 10%
+			right: 10%
+			bottom: 10%
+			left 10%
+			content ''
+			opacity 0
+			-webkit-transition opacity 0.35s, -webkit-transform 0.35s
+			transition opacity 0.35s, transform 0.35s
+
+
+		figure.effect-bubba figcaption::before 
+			border-top 1px solid #fff
+			border-bottom 1px solid #fff
+			-webkit-transform scale(0,1);
+			transform scale(0,1)
+
+
+		figure.effect-bubba figcaption::after 
+			border-right 1px solid #fff
+			border-left 1px solid #fff
+			-webkit-transform scale(1,0)
+			transform scale(1,0)
+
+
+		figure.effect-bubba h2 
+			opacity 0
+			font-size 1em
+			text-align center
+			padding-top 30%
+			-webkit-transition -webkit-transform 0.35s
+			transition transform 0.35s
+			-webkit-transform translate3d(0,-20px,0)
+			transform translate3d(0,-20px,0)
+
+
+		figure.effect-bubba p 
+			padding 20% 2.5em
+			opacity 0
+			-webkit-transition opacity 0.35s, -webkit-transform 0.35s
+			transition opacity 0.35s, transform 0.35s
+			-webkit-transform translate3d(0,20px,0)
+			transform translate3d(0,20px,0)
+
+
+		figure.effect-bubba:hover figcaption::before,
+		figure.effect-bubba:hover figcaption::after,
+		figure.effect-bubba:hover h2, 
+			opacity 1
+			-webkit-transform scale(1)
+			transform: scale(1)
+
+
+		figure.effect-bubba:hover h2,
+		figure.effect-bubba:hover p 
+			opacity 1
+			-webkit-transform translate3d(0,0,0)
+			transform: translate3d(0,0,0)
+		
+
 		
 	#list-tablet-opc a
 		position relative
@@ -701,83 +834,15 @@ header
 			figure p
 				letter-spacing 1px
 				font-size 68.5%
-			
-			figure.effect-bubba
-				margin 0
-	
-			figure.effect-bubba
-				background #9e5406
-			
-			figure.effect-bubba img 
-				opacity 0.7
-				-webkit-transition opacity 0.35s
-				transition opacity 0.35s
-			
-
-			figure.effect-bubba:hover img 
-				opacity: 0.4
-			
-
-			figure.effect-bubba figcaption::before,
-			figure.effect-bubba figcaption::after 
-				position absolute
-				top 10%
-				right: 10%
-				bottom: 10%
-				left 10%
-				content ''
-				opacity 0
-				-webkit-transition opacity 0.35s, -webkit-transform 0.35s
-				transition opacity 0.35s, transform 0.35s
-			
-
-			figure.effect-bubba figcaption::before 
-				border-top 1px solid #fff
-				border-bottom 1px solid #fff
-				-webkit-transform scale(0,1);
-				transform scale(0,1)
-			
-
-			figure.effect-bubba figcaption::after 
-				border-right 1px solid #fff
-				border-left 1px solid #fff
-				-webkit-transform scale(1,0)
-				transform scale(1,0)
-			
-
-			figure.effect-bubba h2 
-				padding-top 30%
-				-webkit-transition -webkit-transform 0.35s
-				transition transform 0.35s
-				-webkit-transform translate3d(0,-20px,0)
-				transform translate3d(0,-20px,0)
-			
-
-			figure.effect-bubba p 
-				padding 20% 2.5em
-				opacity 0
-				-webkit-transition opacity 0.35s, -webkit-transform 0.35s
-				transition opacity 0.35s, transform 0.35s
-				-webkit-transform translate3d(0,20px,0)
-				transform translate3d(0,20px,0)
-			
-
-			figure.effect-bubba:hover figcaption::before,
-			figure.effect-bubba:hover figcaption::after 
-				opacity 1
-				-webkit-transform scale(1)
-				transform: scale(1)
-			
-
-			figure.effect-bubba:hover h2,
-			figure.effect-bubba:hover p 
-				opacity 1
-				-webkit-transform translate3d(0,0,0)
-				transform: translate3d(0,0,0)
 	
 		
-	
-				
+@media screen and (min-width:900px) and (max-width:966px)
+
+	.box
+		
+		width 20%
+		figure
+			margin 0		
 				
 
 @media screen and (min-width:680px) and (max-width:860px)
