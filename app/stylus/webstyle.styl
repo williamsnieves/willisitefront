@@ -7,6 +7,7 @@ dark_gray = #343838
 blue_medium = #008C9E
 blue_light = #00B4CC
 white_color = #fff
+black_color = #000
 
 rotateline(param)
 	-webkit-transform rotate(param)
@@ -790,6 +791,51 @@ header
 			opacity 1
 			-webkit-transform translate3d(0,0,0)
 			transform: translate3d(0,0,0)
+			
+	.detail-images-tablet
+		position relative
+		padding 0
+		figure
+			position relative
+			margin 0
+			img
+				width 100%
+				height 870px
+		figcaption
+			width 100%
+			opacity 0.7
+			background-color rgba(0, 0, 0, 0.7)
+			background black_color
+			position absolute
+			bottom 0
+			left 0
+			p, h2, span
+				color white_color
+				opacity 1
+			h2
+				margin 1em 0 0 1em
+			p
+				margin 1em 2.5em 0 2.5em
+	
+	.grid-button-tablet
+		background dark_gray
+		width 80px
+		height 70px
+		border-radius 0.5em 0 0 0.5em
+		position absolute
+		top 2em
+		right 0
+	
+	.arrows-button-tablet
+		background dark_gray
+		width 80px
+		height 60px
+		border-radius 0.5em 0 0 0.5em
+		position absolute
+		top 6em
+		margin 1.5em 0 0 0
+		right 0
+				
 		
 
 		
