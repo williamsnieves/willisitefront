@@ -317,6 +317,12 @@ header
 		background #4e4e4e
 		color white_color
 
+.web-page
+	display none
+
+.main-menu-web
+	display none
+
 
 #line-input-name
 	border 0
@@ -998,6 +1004,67 @@ header
 		img
 			width 48.3em
 			height 42.375em
+			
+
+@media screen and (min-width:1000px)
+
+	.tablet-page
+		display none
+	.main-menu-tablet
+		display none
+	.main-menu-web
+		background dark_gray
+		display block
+		height 58px
+	.logo-tablet
+		margin 0.8em 0.2em 1.8em 0
+	.web-page
+		display block
+	.bg-web-logo
+		position relative
+		width 400px
+		background blue_strong
+		margin 0 auto
+		figure
+			margin 0
+			text-align center
+			img
+				width 230px
+		h2
+			text-align center
+			color white_color
+		h4
+			text-align center
+			color white_color
+			line-height 0.5em
+			&:last-child
+				padding-bottom 1em
+	.profile-content-web-init
+		border 1px solid red
+		height 384.5px
+	.profile-skilllogo-web-init
+		&:after
+			border-left solid 12.5em transparent
+			border-right solid 12.5em transparent
+			border-top solid 24.7em blue_strong
+			content ""
+			height 0
+			margin-left -12.5em
+			position absolute
+			top -0.5em
+			left: 50%;
+			width 0
+			z-index 999999
+	.profile-image-web-init
+		padding 0
+		border 1px solid red
+		height auto
+		figure
+			margin 0
+			img
+				width 100%
+		
+			
 			
 
 @keyframes start
