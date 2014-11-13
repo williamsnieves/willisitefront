@@ -1,6 +1,7 @@
 @import 'normalize.styl'
 @import 'font.styl'
 
+blue_mobile = #14235c
 blue_strong = #005F6B
 blue_links = #00B4CC
 dark_gray = #343838
@@ -36,7 +37,7 @@ body
 	font-size 16px
 
 header
-	background #14235c
+	background blue_mobile
 	height 60px
 	width 100%
 
@@ -1008,6 +1009,11 @@ header
 
 @media screen and (min-width:1000px)
 
+	header
+		background dark_gray
+		height 60px
+		width 100%
+
 	.tablet-page
 		display none
 	.main-menu-tablet
@@ -1045,6 +1051,21 @@ header
 				padding-bottom 1em
 	.profile-content-web-init
 		height 384.5px
+		h2
+			color dark_gray
+			font-size 1.3em
+			text-transform uppercase
+			margin 1.5em 0 0 .5em
+		h6
+			color dark_gray
+			line-height .8em
+			margin-left 0.7em
+			&:nth-child(2)
+				margin-top 1em
+		p
+			color dark_gray
+			margin-left 0.7em
+			width 312px;
 	.profile-skilllogo-web-init
 		&:after
 			border-left solid 16.8em transparent
@@ -1086,6 +1107,158 @@ header
 		font-weight bold
 		color white_color
 		z-index 999999
+	
+	.big-title-web
+		h2
+			text-align center
+			color blue_light
+			font-weight bold
+			text-transform uppercase
+	.brain-wrapper-web .brain-left-content-web
+		background dark_gray
+		height 500px
+		color white_color
+		position relative
+		figure
+			margin 0 0.2em 0 0
+			position absolute
+			right 0
+			top 7.5em
+			animation brainfloat 4s infinite
+			-webkit-animation brainfloat 4s infinite
+			img
+				width 11.625em
+	
+	.brain-wrapper-web .brain-right-content-web
+		background blue_light
+		height 500px
+		color white_color
+		position relative
+		figure
+			margin 0 0 0 0.2em
+			position absolute
+			left 0
+			top 7.5em
+			animation brainfloat 4s infinite
+			-webkit-animation brainfloat 4s infinite
+			img
+				width 11.625em
+				/*height 511px*/
+	
+	.web-left-brain-profile
+		background blue_strong
+		padding 0
+		height 650px
+	
+	.web-right-brain-profile
+		background blue_medium
+		padding 0
+		height 650px
+	
+	.web-profile-image-content
+		padding 0
+		figure
+			position relative
+			margin 0
+			figcaption
+				position absolute
+				bottom 0
+				background black_color
+				opacity 0.7
+				p
+					color white_color
+					opacity 1
+					margin 1em
+			img
+				width 100%
+				height 650px
+	
+	.web-brain-profile-wrapper
+		padding 0
+	
+	.web-left-brain-profile
+		position relative
+		figure
+			margin 0 0.2em 0 0
+			position absolute
+			right 0
+			top 11.5em
+			animation brainfloat 4s infinite
+			-webkit-animation brainfloat 4s infinite
+			img
+				width 8.6875em
+	
+	.web-right-brain-profile
+		position relative
+		figure
+			margin 0 0 0 0.2em
+			position absolute
+			left 0
+			top 11.5em
+			animation brainfloat 4s infinite
+			-webkit-animation brainfloat 4s infinite
+			img
+				width 8.6875em
+	.web-left-brain-profile figure.brainbranch
+		position absolute
+		
+		&:nth-child(2)
+			margin -2.2em 3em 0 0
+			img
+				width 5em
+				rotateline(24deg)
+		&:nth-child(3)
+			margin -3.4em 0 0 0
+			img
+				width 5em
+				rotateline(45deg)
+		&:nth-child(4)
+			margin 0.5em 6.2em 0 0
+			img
+				width 5em
+				rotateline(10deg)
+		&:nth-child(5)
+			margin 3.8em 8.1em 0 0
+			img
+				width 5em
+		&:nth-child(6)
+			margin 8.8em 8.8em 0 0
+			img
+				width 5em
+				rotateline(-23deg)
+		&:nth-child(7)
+			margin 13.8em 3.8em 0 0
+			img
+				width 5em
+				rotateline(-78deg)
+	
+	.web-right-brain-profile figure.brainbranch
+		position absolute
+		
+		&:nth-child(2)
+			margin -2em 0 0 3em
+			img
+				width 5em
+				rotateline(-58deg)
+		&:nth-child(3)
+			margin 2em 0 0 7em
+			img
+				width 5em
+				rotateline(-45deg)
+		&:nth-child(4)
+			margin 6.5em 0 0 8.2em
+			img
+				width 5em
+				rotateline(-24deg)
+		&:nth-child(5)
+			margin 11.8em 0 0 6.7em
+			img
+				width 5em
+				rotateline(12deg)
+				
+			
+	#brainbranch1
+		rotateline(45deg)
 		
 			
 			
