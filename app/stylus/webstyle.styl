@@ -1026,6 +1026,7 @@ header
 		margin 0.8em 0.2em 1.8em 0
 	.web-page
 		display block
+		position relative
 	.bg-web-logo
 		background url("../images/fondo-home.png") center center
 		background-repeat no-repeat
@@ -1255,6 +1256,53 @@ header
 			img
 				width 5em
 				rotateline(12deg)
+	
+	.portfolio-first-web
+		margin 0
+		padding 0
+		height 900px
+		
+		&:nth-child(1)
+			background blue_strong
+			position relative
+			h2
+				text-align center
+				position absolute
+				top 0.5em
+				left 3em
+				a					
+					color white_color
+		&:nth-child(2)
+			background blue_medium
+			position relative
+			/*position absolute
+			left 20em
+			z-index 99999
+			width 41%
+			transform skew(-14deg)
+			-webkit-transform skew(-14deg)*/
+			h2
+				position relative
+				top 37%
+				text-align center
+				transform skew(14deg)
+				-webkit-transform skew(14deg)
+				//position relative
+				//bottom -10em
+				//margin 0 auto
+				a					
+					color white_color
+					//display block
+		&:nth-child(3)
+			background blue_light
+			position relative
+			h2
+				position absolute
+				text-align center
+				bottom 0.5em
+				right 3em
+				a					
+					color white_color
 				
 			
 	#brainbranch1
