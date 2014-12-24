@@ -324,6 +324,15 @@ header
 .main-menu-web
 	display none
 
+.tablet-page
+	display none
+
+.less-padding
+	padding 0
+
+.brain-wrapper-web
+	display none
+
 
 #line-input-name
 	border 0
@@ -349,6 +358,9 @@ header
 		height auto
 	.small-page
 		display none
+	
+	.tablet-page
+		display block
 
 	.icon-menu-willi
 		display none
@@ -1016,6 +1028,8 @@ header
 
 	.tablet-page
 		display none
+	.brain-wrapper-web
+		display block
 	.main-menu-tablet
 		display none
 	.main-menu-web
@@ -1067,6 +1081,14 @@ header
 			color dark_gray
 			margin-left 0.7em
 			width 312px;
+		a.expand-more-profile
+			color blue_medium
+			position relative
+			font-weight bold
+			font-size 2em
+			top -0.5em
+			margin 0.4em
+				
 	.profile-skilllogo-web-init
 		&:after
 			border-left solid 16.8em transparent
@@ -1498,6 +1520,86 @@ header
 	.reveal-modal
 		h1
 			text-align center
+			
+	.web-social-contact
+		width 30%
+		margin 2em auto 0 auto
+		
+	
+	.icon-phone
+		margin 0 0.3em 0 0
+		position relative
+		top 0.2em
+	
+	.icon-linkedin
+		margin 0 0 0 0.2em
+		position relative
+		top .2em
+	
+	.icon-github
+		margin 0 0 0 0.2em
+		position relative
+		top .2em
+	
+	.icon-stackoverflow
+		margin 0 0 0 0.2em
+		position relative
+		top .2em
+		
+	.icon-twitter
+		margin 0 0 0 0.2em
+		position relative
+		top .2em
+		
+		
+	.icon-mail
+		position relative
+		top .5em
+	
+	.web-phone-contact
+		display inline-block
+		p
+			margin 0
+			font-size 0.7em
+		div
+			float right
+	
+	.wrapper-offset-left-web-brain
+		height 500px
+		background dark_gray
+		position absolute
+		top 0
+		left 0
+	
+	.wrapper-offset-right-web-brain
+		height 500px
+		background blue_light
+		position absolute
+		top 0
+		right 0
+		z-index -999999
+	
+	.brain-offset-content-web
+		position relative
+	
+	.web-more-profile
+		display none
+		
+		background blue_medium;
+		border-bottom 1em solid blue_light
+		span.close-more-profile
+			color white_color
+			position absolute
+			right 0
+			margin 0.5em 1em 0 0
+			font-weight bold
+		p
+			margin 2em
+			color white_color
+	
+	.web-more-profile-show
+		display block
+			
 	
 	#myModal
 		z-index 9999999	
